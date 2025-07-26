@@ -6,6 +6,7 @@ export default function Document() {
     <Html lang="en">
       <Head>
         <title>Ig News</title>
+        <link rel="shortcut icon" href="/Union.svg" type="image/svg" />
       </Head>
       <body className="antialiased">
         <Main />

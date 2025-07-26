@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono, Roboto } from "next/font/google";
 import Head from "next/head";
-
+import styles from "./home.module.scss";
+import { SubscribeButton } from "../components/SubscribeButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,8 +27,19 @@ export default function Home() {
       <Head>
         <title>Ig News | Home</title>
       </Head>
-      <main className={`flex flex-col gap-[32px] row-start-2 items-center sm:items-start`}>
-        Hello World
+      <main className={`flex flex-col gap-[32px] row-start-2 items-center sm:items-start ${styles.contentContainer}`}>
+        <section className={styles.hero}>
+          <span>👏 Hey, welcome</span>
+          <h1>News about the <span>React</span> world.</h1>
+          <p>
+            Get access to all the publications <br />
+            <span>for { 1 } month</span>
+          </p>
+
+          <SubscribeButton />
+        </section>
+
+        <img src="Mulher.svg" alt="Girl coding" />
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
 
